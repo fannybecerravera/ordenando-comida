@@ -5,19 +5,18 @@
  En el caso raro que ninguna de esas opciones esté disponible, te irías por una hamburguesa. 
  Escribe una función, que de acuerdo a la disponibilidad de los platos en el menú, decidas qué ordenar. */
 
- switch (prompt("¿Cuál es el plato que deceas ordenar?")) {
-    case"ceviche":
-      alert("¡Lo siento!No se encuentra disponible este plato por el momento");
-      break;
-    case"tacos al pastor":
-    alert("¡Lo siento! No se encuentra disponible este plato por el momento");
-    case"empanada chilena":
-    alert("¡Este plato si esta diponible!");
-    break;
-    default:
-    alert("En caso de que no este el plato que te guste te ofrecemos hambuerguesas");
+ 
+const restaurant = function (){ 
+let foodOrden = prompt("¿Cuál es el plato que deseas ordenar");
+
+if (foodOrden === "ceviche"){
+    alert("¡Lo siento!No se encuentra disponible este plato por el momento");
+}else if(foodOrden === "tacos de al pastor"){
+    alert("¡Lo siento!No se encuentra disponible este plato por el momento")
+}else if(foodOrden === "empanada chilena"){
+  alert("¡Este plato si esta diponible!")
+}else {
+  alert("En caso de que no este el plato que te guste te ofrecemos hambuerguesas");
 }
-
-
-    
-    
+}   
+restaurant();
